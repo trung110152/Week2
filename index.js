@@ -1,4 +1,3 @@
-function nhungjs(){
-    alert('xin chao');
-}
+function demo(){
+    alert('xin_chao');
 }
