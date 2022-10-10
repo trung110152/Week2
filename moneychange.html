@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+<form>
+    <div>
+        <lable>Amount</lable>
+        <br>
+    <input type="text" id="dauvao">
+    </div>
+
+    <div>
+    <lable>from Currency</lable>
+    <br>
+    <select name="" id="select1">
+    <option value="a">Vnd</option>
+    <option value="b">Usd</option>
+    </select>
+    </div>
+    <div>
+        <lable>to currency</lable>
+        <br>
+
+   <select name="" id="select2">
+    <option value="a">Vnd</option>
+    <option value="b">Usd</option>
+   </select>
+    </div>
+    <div id ="cc">
+   <button   onclick="doi()">Convert</button>
+    </div>
+
+</form>
+
+<script>
+    function doi(){
+        let giatrivao = document.getElementById('dauvao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+    if (select1 == select2){
+        document.getElementById('cc').innerHTML = ('ketqua:' + giatrivao);
+    }
+    if (select1 == "a" && select2 == "b"){
+        alert(giatrivao/24000);
+    }
+    if (select1 == "b" && select2 == "a"){
+        alert(giatrivao*24000);
+    }
+
+
+
+    }
+</script>
+
+
+</body>
+</html>
