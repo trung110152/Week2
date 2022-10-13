@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+<p>DO you love me?</p>
+<input id="y" onclick="love()" value="yes" type="button">
+<input id="n" style="position:absolute"; onmouseover= "nlove()" ; value="no" type="button">
+<script>
+  function love(){
+    alert("<3")
+  }
+  function nlove(){
+   let a = Math.round(Math.random() * window.innerWidth);
+   let b = Math.round(Math.random() * window.innerHeight);
+   document.getElementById('n').style.left = a + 'px';
+   document.getElementById('n').style.top = b+ 'px';
+
+  }
+</script>
+</body>
+</html>

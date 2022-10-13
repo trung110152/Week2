@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+<script>
+  let a = parseInt(prompt('nhâp hệ số a :'))
+  let b = parseInt(prompt('nhâp hệ số b :'))
+  let c = parseInt(prompt('nhâp hệ số c :'))
+  let delta = b * b - (4 * a * c);
+  if ( a !== 0 && delta > 0){
+      x1 = (-b + Math.sqrt(delta)) / (2 * a) ;
+      x2 = (-b - Math.sqrt(delta)) / (2 * a);
+      alert('phương trình có 2 nghiệm x1 là: ' + x1 + ' x2 là: ' + x2)
+  } else if ( delta === 0){
+      x =-b / 2 / a;
+      alert('nghiệm của phương trình là x= ' + x);
+  } else {
+      alert('phương trình vô nghiệm')
+  }
+
+
+
+
+
+</script>
+</body>
+</html>
