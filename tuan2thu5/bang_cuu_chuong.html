@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+<p>Bảng cửu chương</p>
+<script>
+  let aa;
+  aa ="<table border='1' width='300' cellspacing='0' cellpadding='3' > "
+     for (x = 1; x < 10; x++){
+       aa = aa + '<tr>';
+       for (y =2; y < 10; y++){
+         aa = aa + '<td>' + y + '*' + x + '=' + x*y + '</td>';
+       }
+         aa = aa + '</tr>'
+     }
+     aa = aa + '</table>';
+     document.write(aa)
+</script>
+</body>
+</html>
